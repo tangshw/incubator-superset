@@ -1,0 +1,90 @@
+I am trying Superset on a Windows10 system , I have installed Superset successfully (I think) in a virtual env:
+1. 
+
+(env) C:\Work\Superset\env\Lib\site-packages\superset\bin>python superset db upgrade
+2019-10-07 10:14:44,434:INFO:root:Configured event logger of type <class 'superset.utils.log.DBEventLogger'>
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+
+2. 
+(env) C:\Work\Superset\env\Lib\site-packages\superset\bin>Python superset load_examples
+2019-10-07 10:15:14,665:INFO:root:Configured event logger of type <class 'superset.utils.log.DBEventLogger'>
+Loading examples metadata and related data into examples
+Creating default CSS templates
+Loading energy related dataset
+2019-10-07 10:15:15,895:INFO:root:Database.get_sqla_engine(). Masked URL: sqlite:///C:\Users\shouwei\.superset\superset.db
+Creating table [wb_health_population] reference
+Loading [World Bank's Health Nutrition and Population Stats]
+Creating table [wb_health_population] reference
+Creating slices
+Creating a World's Health Bank dashboard
+Loading [Birth names]
+Creating some slices
+Creating a dashboard
+Loading [Unicode test data]
+Creating table [unicode_test] reference
+Creating a slice
+Creating a dashboard
+Loading [Random time series data]
+Creating table [random_time_series] reference
+Creating a slice
+Loading [Random long/lat data]
+Creating table reference
+Creating a slice
+Loading [Country Map data]
+Creating table reference
+Creating a slice
+Loading [Multiformat time series]
+Creating table [multiformat_time_series] reference
+Creating Heatmap charts
+Loading [Paris GeoJson]
+Creating table paris_iris_mapping reference
+Loading [San Francisco population polygons]
+Creating table sf_population_polygons reference
+Loading [Flights data]
+Done loading table!
+Loading [BART lines]
+Creating table bart_lines reference
+Loading [Multi Line]
+Creating table [wb_health_population] reference
+Creating slices
+Creating a World's Health Bank dashboard
+Creating some slices
+Creating a dashboard
+Loading [Misc Charts] dashboard
+Creating the dashboard
+Loading DECK.gl demo
+Loading deck.gl dashboard
+Creating Scatterplot slice
+Creating Screen Grid slice
+Creating Hex slice
+Creating Grid slice
+Creating Polygon slice
+Creating Arc slice
+Creating Path slice
+Creating a dashboard
+Loading [Tabbed dashboard]
+Creating a dashboard with nested tabs
+
+3.
+(env) C:\Work\Superset\env\Lib\site-packages\superset\bin>python superset init
+2019-10-07 10:15:31,535:INFO:root:Configured event logger of type <class 'superset.utils.log.DBEventLogger'>
+2019-10-07 10:15:33,571:INFO:root:Syncing role definition
+2019-10-07 10:15:33,580:INFO:root:Syncing Admin perms
+2019-10-07 10:15:33,670:INFO:root:Syncing Alpha perms
+2019-10-07 10:15:33,757:INFO:root:Syncing Gamma perms
+2019-10-07 10:15:33,839:INFO:root:Syncing granter perms
+2019-10-07 10:15:33,913:INFO:root:Syncing sql_lab perms
+2019-10-07 10:15:33,990:INFO:root:Fetching a set of all perms to lookup which ones are missing
+2019-10-07 10:15:34,061:INFO:root:Creating missing datasource permissions.
+2019-10-07 10:15:34,079:INFO:root:Creating missing database permissions.
+2019-10-07 10:15:34,081:INFO:root:Creating missing metrics permissions
+2019-10-07 10:15:34,086:INFO:root:Cleaning faulty perms
+
+but encoutnered error when try to start the server 
+4.
+(env) C:\Work\Superset\env\Lib\site-packages\superset\bin>python superset runserver -d
+2019-10-07 10:15:53,058:INFO:root:Configured event logger of type <class 'superset.utils.log.DBEventLogger'>
+Usage: superset [OPTIONS] COMMAND [ARGS]...
+
+Anyone can guide me here? Thanks
